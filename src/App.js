@@ -3,22 +3,22 @@ import "./index.css";
 import Layout from "./Layout/Layout";
 import NavBar from "./NavBar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+// import Main from "./Layout/Main";
+import Home from "./Home";
 
 function App() {
   return (
     <Router>
       <div className="App">
         <NavBar />
-        <div className="content">
+        <Layout />
+        {/* <div className="content">
           <Switch>
             <Route exact path="/">
-              <Layout />
+              <Home />
             </Route>
-            {/* <Route path="*">
-              <NotFound />
-            </Route> */}
           </Switch>
-        </div>
+        </div> */}
       </div>
     </Router>
   );
