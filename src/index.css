@@ -1,13 +1,389 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.navbar {
+  border-bottom: 1px solid #e5e5e5;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.profile-name {
+  display: flex;
+  align-items: center;
+}
+
+.profile-text {
+  font-size: 14px;
+  color: #2e2e2e;
+  padding-right: 0.3rem;
+  padding-left: 0.6rem;
+}
+
+.side-bar {
+  height: 949px;
+  width: 13%;
+  background-color: #002855;
+}
+
+.records-image {
+  background-color: #eaaa00;
+  border-radius: 20px;
+  width: 2.6rem;
+  height: 2.6rem;
+  position: relative;
+}
+
+.record-white-icon {
+  position: absolute;
+  left: 11px;
+  top: 10px;
+}
+
+.records-named {
+  color: #ffffff;
+  font-size: 12px;
+  margin-top: 1.9rem;
+}
+
+.main {
+  height: 949px;
+  width: 87%;
+}
+
+.record-and-upload {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 24px;
+}
+
+.record {
+  height: 4rem;
+  width: 10rem;
+  position: relative;
+  background-color: #f8fbfd;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.new-record-icon {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.9rem;
+}
+
+.new-record {
+  font-size: 13px;
+  position: absolute;
+  top: 1.25rem;
+  left: 3.75rem;
+  font-size: 13px;
+  color: #002855;
+}
+
+.upload {
+  height: 4rem;
+  width: 10rem;
+  position: relative;
+  background-color: #f8fbfd;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.batch-upload-icon {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.9rem;
+}
+
+.batch-upload {
+  font-size: 13px;
+  position: absolute;
+  top: 1.25rem;
+  left: 3.75rem;
+  font-size: 13px;
+  color: #002855;
+}
+
+.search-date-download {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  border-radius: 24px;
+}
+
+.input-search {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  border: 1px solid #b6b6b6;
+  border-radius: 38px;
+  height: 1.25rem;
+  width: 14%;
+}
+
+.search-icon {
+  color: #b6b6b6;
+  margin-left: 12px;
+}
+
+.input-box {
+  background-color: inherit;
+  width: 68%;
+  height: 0.75rem;
+  border: none;
+  padding-bottom: 0.25rem;
+}
+::placeholder {
+  color: #b6b6b6;
+  font-size: 9px;
+}
+.input-box:focus {
+  outline: none;
+}
+
+.select-date {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  border: 1px solid #b6b6b6;
+  border-radius: 38px;
+  height: 1.25rem;
+  width: 8%;
+}
+
+.date {
+  font-size: 9px;
+  margin-top: 1.1rem;
+  color: #828282;
+}
+
+.download-records {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  border: 1px solid #b6b6b6;
+  border-radius: 38px;
+  height: 1.25rem;
+  width: 9%;
+}
+
+.download {
+  font-size: 9px;
+  margin-top: 1.1rem;
+  color: #828282;
+}
+
+.ivr-records {
+  height: 497px;
+  width: 1031px;
+  background-color: #f8fbfd;
+  border-radius: 15px;
+  position: relative;
+}
+
+.ivr-records-title {
+  color: #002855;
+  font-weight: 500;
+}
+
+.dropdown-item {
+  font-size: 10px;
+}
+
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered-content-text {
+  display: inline-block;
+  font-size: 20px;
+  color: #b6b6b6;
+  text-align: center;
+}
+
+.ivr-records-table {
+  background-color: #f8fbfd;
+  height: 272px;
+  width: 1031px;
+  border-radius: 15px;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.6rem 2rem;
+}
+
+th {
+  font-size: 14px;
+}
+
+.row-data {
+  background-color: #ffffff;
+  /* border: 0;
+  display: block; */
+  /* padding-left: 50px; */
+}
+
+td {
+  font-size: 12px;
+}
+
+.slider-modal-content {
+  border-radius: 0;
+  border: none;
+}
+
+.new-record-slider {
+  /* width: 476px; */ /* take care of width*/
+  height: 949px; /* take care of height*/
+}
+
+.slider-title {
+  color: #002855;
+}
+
+.label-title {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.input-label {
+  color: #828282;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+}
+
+.input-field {
+  width: 80%;
+
+  border: 1px solid #dfe6ec;
+  border-radius: 80px;
+}
+
+.input-field:focus {
+  outline: none;
+}
+
+/* Not seeing the effect */
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.cancel-button {
+  outline: none;
+  border: 1px solid #828282;
+  background-color: #ffffff;
+  color: #828282;
+  border-radius: 94px;
+  padding: 0.2rem 2.2rem;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.button {
+  outline: none;
+  border: none;
+  border-radius: 94px;
+  padding: 0.2rem 2.2rem;
+  background-color: #002855;
+  color: #ffffff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.delete-modal-content {
+  border-radius: 5px;
+  border: none;
+}
+
+.modal-title {
+  font-size: 32px;
+  color: #002855;
+}
+
+.delete-modal-body {
+  font-size: 15px;
+  text-align: center;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Side Modal starts here */
+.modal.left .modal-dialog {
+  position: fixed;
+  top: 74px;
+  right: 0;
+  margin: auto;
+  /* width: 320px; */
+  height: 100%;
+  -webkit-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
+}
+
+.modal.left .modal-content {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.modal.right .modal-body {
+  padding: 15px 15px 80px;
+}
+
+.modal.right.fade .modal-dialog {
+  left: -320px;
+  -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+  -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+  -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+  transition: opacity 0.3s linear, left 0.3s ease-out;
+}
+
+.modal.right.fade.in .modal-dialog {
+  right: 0;
+}
+
+.demo {
+  padding-top: 60px;
+  padding-bottom: 110px;
+}
+
+.btn-demo {
+  margin: 15px;
+  padding: 10px 15px;
+  border-radius: 0;
+  font-size: 16px;
+  background-color: #ffffff;
+}
+
+.btn-demo:focus {
+  outline: 0;
+}
+
+.details-title {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.details {
+  color: #828282;
+  font-size: 13px;
+  margin: 0;
+  padding-bottom: 10px;
 }
