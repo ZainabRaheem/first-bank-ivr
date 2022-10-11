@@ -1,9 +1,10 @@
-import EditRecord from "../EditRecord";
+import BatchUploadIncompleteModal from "../components/modals/BatchUploadIncompleteModal";
+import BatchUploadModal from "../components/modals/BatchUploadModal";
 
 const NewRecordAndUpload = () => {
   return (
     //Margin bottom maybe or not//
-    <div className="container-fluid record-and-upload py-4 px-4 mb-5">
+    <div className="container-fluid record-and-upload py-4 px-4">
       <div
         className="record"
         type="button"
@@ -18,7 +19,11 @@ const NewRecordAndUpload = () => {
         <p className="new-record">New record</p>
       </div>
 
-      <div className="upload">
+      <div
+        className="upload"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModalside"
+      >
         <img
           className="batch-upload-icon"
           src="../images/batchUploadIcon.png"
@@ -30,18 +35,18 @@ const NewRecordAndUpload = () => {
       {/* The sideBar Modal content */}
 
       <div
-        class="modal left fade" /*Check this fade thing*/
+        className="modal left fade" /*Check this fade thing*/
         id="exampleModalside"
-        tabindex=""
+        tabIndex=""
         role="dialog"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
-        <div class="modal-dialog" role="document">
-          <div class="modal-content slider-modal-content">
-            <div class="modal-body slider-modal-body">
+        <div className="modal-dialog" role="document">
+          <div className="modal-content slider-modal-content">
+            <div className="modal-body slider-modal-body">
               {/* Started the layout here */}
-              <EditRecord />
+              <BatchUploadIncompleteModal />
             </div>
           </div>
         </div>

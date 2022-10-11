@@ -1,0 +1,8 @@
+.login-banner {
+  background-color: red;
+  min-height: 100vh;
+  background-image: url("/public/images/logo_blue_part.png"),
+    url("/public/images/logo_orange_part.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}

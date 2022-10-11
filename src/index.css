@@ -1,3 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
 .navbar {
   border-bottom: 1px solid #e5e5e5;
 }
@@ -243,7 +250,7 @@ td {
 }
 
 .new-record-slider {
-  /* width: 476px; */ /* take care of width*/
+  width: 20vw;  /* take care of width*/
   height: 949px; /* take care of height*/
 }
 
@@ -318,7 +325,7 @@ td {
   text-align: center;
 }
 
-.modal-footer {
+.custom-modal-footer {
   display: flex;
   justify-content: space-around;
 }
